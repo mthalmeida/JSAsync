@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOP 10 criptomoedas</title>
-</head>
-<body>
-  <h1>Quais são as TOP 10 Criptomoedas do munto hoje:</h1>
-  <div>
-    <ul id="coins-list">
-    </ul>
-  </div>
+<html lang="pt-BR">
 
-  <script src="apiCoins.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptomoedas</title>
+    <link rel="stylesheet" type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div>
+      <marquee loop="true" scrollamount="50">
+        <ul id="coins-list">
+        </ul>
+      </marquee>
+    </div>
+
+    <div id="divFather">
+      <div class="container">
+        <p id="textTimer">Atualizando em</p>
+        <h2 id="timer"></h2>
+        <div class="alert alert-danger" id="myAlert" role="alert">
+          <p>atualizando valores...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="apiCoins.js"></script>
+    <script src="countdown.js"></script>
+
+  </body>
+
 </html>

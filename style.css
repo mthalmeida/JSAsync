@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Bolgart";
+  src: url('Bolgart.ttf');
+}
+
+body {
+  background-color: black;
+}
+
+#coins-list {
+  height: 100%;
+  margin-top: 170px;
+}
+
+#coins-list li {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+  margin-left: 400px;
+  font-size: 20em;
+  color: rgb(121, 252, 33);
+}
+
+.divFather {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.container {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#textTimer {
+  color: white;
+  display: inline;
+  color: rgba(255, 255, 255, 0.178);
+}
+
+#timer {
+  font-size: 20px;
+  display: inline;
+  color: rgba(255, 255, 255, 0.178);
+  text-align: center;
+  background-color: black;
+}
+
+.elemento {
+  width: 30%;
+  height: 20px;
+  background-color: #000000;
+  bottom: 0;
+  left: 0;
+}
